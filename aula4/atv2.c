@@ -42,7 +42,7 @@ int main(){
 
     // ! Loop para reajustar o salário de todos os funcionários
     for (int i = 0; i < quantidade; i++){
-        reajusteSalario(&func[i].salario);   // * Reajusta o salário do funcionário
+        reajusteSalario(&func[i].salario);   // * Reajusta o salário do funcionário, usamos o & para passar o endereço da variável já que ela não é um ponteiro
     }
 
     realSalario(func, quantidade);   // * Exibe os salários reajustados
