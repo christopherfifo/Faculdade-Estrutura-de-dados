@@ -1,103 +1,85 @@
-//todo --------------------------------- NÃO USEI GPT, MAS USEI ELE PARA COMENTAR O CÓDIGO ------------------------------------------
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
 #include <string.h>
 
-// ! Estrutura FUNCIONARIO para armazenar informações do funcionário
 typedef struct funcionario{
-    int id;             // ! Identificador único do funcionário
-    char nome[100];     // ! Nome do funcionário
-    int idade;          // ! Idade do funcionário
-    float salario;      // ! Salário do funcionário
+    int id;
+    char nome[100];
+    int idade;
+    float salario;
 }FUNCIONARIO;
 
-
-// * Função para coletar dados de um funcionário
 FUNCIONARIO coletaDados();
-// * Função para imprimir os dados dos funcionários
 void imprimeDados(FUNCIONARIO func[], int quantidade);
-// * Função para reajustar o salário do funcionário em 10%
 void reajusteSalario(float *salario);
-// * Função para imprimir os salários reajustados dos funcionários
 void realSalario(FUNCIONARIO func[], int quantidade);
 
 int main(){
-    int quantidade;     // ! Quantidade de funcionários
-    setlocale(LC_ALL, "Portuguese");   // ! Configura o uso de acentos
+    int quantidade;
+    setlocale(LC_ALL, "Portuguese");
 
     printf("Digite a quantidade de funcionários: ");
-    scanf(" %d", &quantidade);    // * Captura a quantidade de funcionários
+    scanf(" %d", &quantidade);
     printf("\n");
 
-    FUNCIONARIO func[quantidade]; // ! Array de structs para armazenar os funcionários
+    FUNCIONARIO func[quantidade];
 
-    // ! Loop para coletar dados de todos os funcionários
     for (int i = 0; i < quantidade; i++){
-        func[i] = coletaDados(); // * Coleta os dados de cada funcionário
+        func[i] = coletaDados();
     }
 
-    imprimeDados(func, quantidade);   // * Imprime os dados dos funcionários
+    imprimeDados(func, quantidade);
 
-    // ! Loop para reajustar o salário de todos os funcionários
     for (int i = 0; i < quantidade; i++){
-        reajusteSalario(&func[i].salario);   // * Reajusta o salário do funcionário, usamos o & para passar o endereço da variável já que ela não é um ponteiro
+        reajusteSalario(&func[i].salario);
     }
 
-    realSalario(func, quantidade);   // * Exibe os salários reajustados
+    realSalario(func, quantidade);
 
     printf("\n\n");
-    system("pause");   // * Pausa o sistema antes de encerrar o programa
+    system("pause");
     return 0;
 }
 
-// * Função que coleta os dados de um funcionário
 FUNCIONARIO coletaDados(){
-    FUNCIONARIO nario;     // ! Variável temporária para armazenar os dados do funcionário
+    FUNCIONARIO nario;
     printf("Digite o ID do funcionário: ");
-    scanf("%d", &nario.id);    // * Captura o ID do funcionário
+    scanf("%d", &nario.id);
     printf("Digite o nome do funcionário: ");
-    getchar();    // * Limpa o buffer do teclado
-    fgets(nario.nome, sizeof(nario.nome), stdin);   // * Captura o nome do funcionário
-    nario.nome[strlen(nario.nome)-1] = '\0';   // * Remove o caractere de nova linha
+    getchar();
+    fgets(nario.nome, sizeof(nario.nome), stdin);
+    nario.nome[strlen(nario.nome)-1] = '\0';
     printf("Digite a idade do funcionário: ");
-    scanf("%d", &nario.idade);  // * Captura a idade do funcionário
+    scanf("%d", &nario.idade);
     printf("Digite o salário do funcionário: ");
-    scanf("%f", &nario.salario);   // * Captura o salário do funcionário
+    scanf("%f", &nario.salario);
     printf("\n");
 
-    return nario;   // * Retorna os dados coletados
+    return nario;
 }
 
-// * Função que imprime os dados de todos os funcionários
 void imprimeDados(FUNCIONARIO func[], int quantidade){
-
-    // ! Loop para imprimir os dados de cada funcionário
     for (int i = 0; i < quantidade; i++){
-        printf("Funcionário %d\n", i+1);    // ! Exibe o índice do funcionário
+        printf("Funcionário %d\n", i+1);
         printf("\n");
-        printf("ID: %d\n", func[i].id);     // * Exibe o ID do funcionário
-        printf("Nome: %s\n", func[i].nome); // * Exibe o nome do funcionário
-        printf("Idade: %d\n", func[i].idade);   // * Exibe a idade do funcionário
-        printf("Salário: %.2f\n", func[i].salario);   // * Exibe o salário do funcionário
+        printf("ID: %d\n", func[i].id);
+        printf("Nome: %s\n", func[i].nome);
+        printf("Idade: %d\n", func[i].idade);
+        printf("Salário: %.2f\n", func[i].salario);
         printf("\n");
     }
 }
 
-// * Função que reajusta o salário do funcionário em 10%
 void reajusteSalario(float *salario){
-    *salario *= 1.10;   // ! Aumenta o salário em 10%
+    *salario *= 1.10;
 }
 
-// * Função que imprime os salários reajustados
 void realSalario(FUNCIONARIO func[], int quantidade){
     printf("Salários reajustados:\n\n");
-
-    // ! Loop para imprimir os salários reajustados de cada funcionário
     for (int i = 0; i < quantidade; i++){
-        printf("Nome: %s\n", func[i].nome);   // * Exibe o nome do funcionário
-        printf("Salário: %.2f\n", func[i].salario);   // * Exibe o salário reajustado
+        printf("Nome: %s\n", func[i].nome);
+        printf("Salário: %.2f\n", func[i].salario);
         printf("\n");
     }
 }
