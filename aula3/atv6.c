@@ -1,42 +1,46 @@
 #include <stdio.h>
 #include <ctype.h>
+#include <string.h>
 
-void strupr_custom(char *str) {
-    for (int i = 0; str[i] != '\0'; i++) {
-        str[i] = toupper(str[i]);
-    }
-}
+void invert_words(char *str) {
+    char temp[100];
+    int j = 0, len = strlen(str);
 
-void strlwr_custom(char *str) {
-    for (int i = 0; str[i] != '\0'; i++) {
-        str[i] = tolower(str[i]);
+   
+    for (int i = len - 1; i >= 0; i--) {
+        if (str[i] == ' ' || str[i] == '\n') {
+            temp[j++] = str[i];
+        } else {
+            int start = i;
+            while (i >= 0 && str[i] != ' ' && str[i] != '\n') {
+                i--;
+            }
+            for (int k = start; k > i; k--) {
+                temp[j++] = str[k];
+            }
+        }
     }
+    temp[j] = '\0';
+    strcpy(str, temp);
 }
 
 int main() {
     char string[100];
-    int i;
 
     printf("Digite uma string: ");
-    fgets(string, 100, stdin);
+    fgets(string, sizeof(string), stdin);
 
-    // Inverter caixa dos caracteres
-    for (i = 0; string[i] != '\0'; i++) {
-        if (islower(string[i])) {
-            string[i] = toupper(string[i]);
-        } else if (isupper(string[i])) {
-            string[i] = tolower(string[i]);
-        }
-    }
+   
+    strupr(string);
+    printf("String em maiúsculas: %s", string);
 
-    printf("String com caixa invertida: %s\n", string);
+ 
+    invert_words(string);
+    printf("String com palavras invertidas: %s", string);
 
-    // Demonstrando funções strupr() e strlwr()
-    strupr_custom(string);
-    printf("String em maiúsculas: %s\n", string);
-
-    strlwr_custom(string);
-    printf("String em minúsculas: %s\n", string);
+   
+    strlwr(string);
+    printf("String em minúsculas: %s", string);
 
     return 0;
 }
