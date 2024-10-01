@@ -20,7 +20,7 @@ int main() {
     printf("Digite uma string: ");
     fgets(string, 100, stdin);
 
-    // Inverter caixa dos caracteres
+
     for (i = 0; string[i] != '\0'; i++) {
         if (islower(string[i])) {
             string[i] = toupper(string[i]);
@@ -31,7 +31,7 @@ int main() {
 
     printf("String com caixa invertida: %s\n", string);
 
-    // Demonstrando funções strupr() e strlwr()
+
     strupr_custom(string);
     printf("String em maiúsculas: %s\n", string);
 

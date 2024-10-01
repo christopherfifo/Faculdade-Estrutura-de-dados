@@ -17,7 +17,7 @@ int main() {
             string[i] == 'E' || string[i] == 'I' || string[i] == 'O' || 
             string[i] == 'U') {
             cont_vogais++;
-            string[i] = consoante; // Substitui vogal pela consoante
+            string[i] = consoante; 
         }
     }
 

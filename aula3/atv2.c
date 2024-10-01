@@ -13,7 +13,7 @@ int main() {
     printf("Digite o segundo sobrenome: ");
     scanf("%s", sobrenome2);
 
-    // Concatena as strings
+
     strcpy(nome_completo, nome);
     strcat(nome_completo, " ");
     strcat(nome_completo, sobrenome1);

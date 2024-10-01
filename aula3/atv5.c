@@ -7,7 +7,7 @@ int main() {
     char str[100];
     int i = 0;
     setlocale(LC_ALL, "Portuguese");
-    // Lê uma string do teclado
+
     printf("Digite uma string: ");
     fgets(str, 100, stdin);
 
