@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1728414473 source:c:\users\cristopher\desktop\programação\faculdade-estrutura-de-dados\aula9\atv2\ptcart\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"PTcart.h"
+
+1728413424 c:\users\cristopher\desktop\programação\faculdade-estrutura-de-dados\aula9\atv2\ptcart\ptcart.h
+
+1728414529 source:c:\users\cristopher\desktop\programação\faculdade-estrutura-de-dados\aula9\atv2\ptcart\ptcart.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"PTcart.h"
+

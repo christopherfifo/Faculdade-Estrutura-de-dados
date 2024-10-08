@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1728420643 source:c:\users\cristopher\desktop\programação\faculdade-estrutura-de-dados\aula9\atv3\calculadora\calculadora.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"calculadora.h"
+
+1728420527 c:\users\cristopher\desktop\programação\faculdade-estrutura-de-dados\aula9\atv3\calculadora\calculadora.h
+
