@@ -1,25 +1,27 @@
 #include <stdio.h>
 #include <string.h>
 
-int main() {
-    char nome[30], sobrenome1[30], sobrenome2[30], nome_completo[90];
-
-    printf("Digite o nome: ");
-    scanf("%s", nome);
-
-    printf("Digite o primeiro sobrenome: ");
-    scanf("%s", sobrenome1);
-
-    printf("Digite o segundo sobrenome: ");
-    scanf("%s", sobrenome2);
+int main()
+{
+    char nome[50], sobrenome[50], espaco[10] = {" "};
 
 
-    strcpy(nome_completo, nome);
-    strcat(nome_completo, " ");
-    strcat(nome_completo, sobrenome1);
-    strcat(nome_completo, " ");
-    strcat(nome_completo, sobrenome2);
-
-    printf("Nome completo: %s\n", nome_completo);
+    printf("digite o seu primeiro nome: ");
+    fgets(nome, sizeof(nome), stdin);
+    
+    printf("digite o seu sobrenome: ");
+    fgets(sobrenome, sizeof(sobrenome), stdin);
+    
+     strtok(nome, "\n");
+      strtok(sobrenome, "\n");
+    
+    strcat(nome, espaco);
+    strcat(nome, sobrenome);
+    
+    printf(" seu nome e: %s", nome);
+    
+    printf("\n\n");
+    system("pause");
+    
     return 0;
 }

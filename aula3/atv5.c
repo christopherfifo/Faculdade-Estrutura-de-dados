@@ -9,7 +9,7 @@ int main() {
     setlocale(LC_ALL, "Portuguese");
 
     printf("Digite uma string: ");
-    fgets(str, 100, stdin);
+    fgets(str, sizeof(str), stdin);
 
 
     while (str[i] != '\0') {

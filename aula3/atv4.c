@@ -1,19 +1,28 @@
 #include <stdio.h>
 #include <string.h>
 
-int main() {
-    char string1[100], string2[100];
+int main()
+{
+    char nome[50], sobrenome[50];
+    char *p;
 
-    printf("Digite a primeira string: ");
-    fgets(string1, 100, stdin);
 
-    printf("Digite a segunda string: ");
-    fgets(string2, 100, stdin);
-
-    if (strstr(string1, string2) != NULL) {
-        printf("A segunda string está contida na primeira.\n");
-    } else {
-        printf("A segunda string NÃO está contida na primeira.\n");
+    printf("digite o seu um nome: ");
+    fgets(nome, sizeof(nome), stdin);
+    
+    printf("\ndigite o seu outro nome: ");
+    fgets(sobrenome, sizeof(sobrenome), stdin);
+    
+    strtok(nome, "\n");
+    strtok(sobrenome, "\n");
+    
+    if(strstr(nome, sobrenome) != NULL){
+        p = strstr(nome, sobrenome);
+        printf("\numa string esta contida na outra, local de memoria: %p", &p);
+    } else{
+        printf("\na primeira string não ta contida na segunda");
     }
+    
+    system("pause");
     return 0;
 }

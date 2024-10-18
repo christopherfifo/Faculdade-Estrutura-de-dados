@@ -44,3 +44,51 @@ int main() {
 
     return 0;
 }
+
+
+/*
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+
+int main()
+{
+    char nome[50], outro[50];
+    int n = 0;
+
+    printf("Digite o seu nome: ");
+    fgets(nome, sizeof(nome), stdin);
+
+    // Remover a nova linha que o fgets adiciona
+    strtok(nome, "\n");
+
+    // Inverter as letras: maiúsculas para minúsculas e vice-versa
+    while (nome[n] != '\0') {
+        if (islower(nome[n])) {
+            outro[n] = toupper(nome[n]);
+        } else {
+            outro[n] = tolower(nome[n]);
+        }
+        n++;
+    }
+    outro[n] = '\0';  // Finalizar a string invertida
+
+    // Exibir a string com letras invertidas
+    printf("\nSua palavra com as letras invertidas: %s", outro);
+
+    // Converter a string original para minúsculas
+    for (n = 0; nome[n] != '\0'; n++) {
+        nome[n] = tolower(nome[n]);
+    }
+    printf("\nSua palavra em minúsculas: %s", nome);
+
+    // Converter a string original para maiúsculas
+    for (n = 0; nome[n] != '\0'; n++) {
+        nome[n] = toupper(nome[n]);
+    }
+    printf("\nSua palavra em maiúsculas: %s", nome);
+
+    return 0;
+}
+
+ */

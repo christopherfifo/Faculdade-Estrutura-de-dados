@@ -6,7 +6,7 @@ int main() {
     float salario;
 
     printf("Digite o nome do trabalhador: ");
-    fgets(nome, 50, stdin);
+    fgets(nome, sizeof(nome), stdin);
 
     printf("Digite a idade do trabalhador: ");
     scanf("%d", &idade);
