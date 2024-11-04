@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1730761423 source:c:\users\aluno\desktop\faculdade-estrutura-de-dados\aula10\lista_sequencial\listasequencial.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"listaSequencial.h"
+
+1730761927 c:\users\aluno\desktop\faculdade-estrutura-de-dados\aula10\lista_sequencial\listasequencial.h
+
+1730761927 source:c:\users\aluno\desktop\faculdade-estrutura-de-dados\aula10\lista_sequencial\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"listaSequencial.h"
+
