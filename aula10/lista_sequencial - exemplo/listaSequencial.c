@@ -173,19 +173,6 @@ int consulta_lista_mat(Lista *li, int matricula, struct aluno *al) {
     return 1;
 }
 
-struct aluno inserir_novos_alunos() {
-    struct aluno al4;
-    printf("\n\nDigite a matricula do aluno:");
-    scanf("%d", &al4.matricula);
-    printf("\n\nDigite a primeira nota do aluno:");
-    scanf("%f", &al4.n1);
-    printf("\n\nDigite a segunda nota do aluno:");
-    scanf("%f", &al4.n2);
-    printf("\n\nDigite a terceira nota do aluno:");
-    scanf("%f", &al4.n3);
-    return al4;
-}
-
 void libera_lista(Lista *li) {
     free(li);
 }

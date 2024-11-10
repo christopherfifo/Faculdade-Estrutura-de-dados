@@ -35,8 +35,4 @@ int consulta_lista_pos(Lista *li, int pos, struct aluno *al);
 
 int consulta_lista_mat(Lista *li, int matricula, struct aluno *al);
 
-struct aluno inserir_novos_alunos();
-
-// extern int variavel_global;
-
 #endif // LISTASEQUENCIAL_H_INCLUDED
