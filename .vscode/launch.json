@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Cristopher/Desktop/programação/Faculdade-Estrutura-de-dados/aula10/lista_sequencial - exemplo",
-      "program": "c:/Users/Cristopher/Desktop/programação/Faculdade-Estrutura-de-dados/aula10/lista_sequencial - exemplo/build/Debug/outDebug",
+      "cwd": "c:/Users/Aluno/Desktop/Faculdade-Estrutura-de-dados/aula11/listaLigada",
+      "program": "c:/Users/Aluno/Desktop/Faculdade-Estrutura-de-dados/aula11/listaLigada/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
