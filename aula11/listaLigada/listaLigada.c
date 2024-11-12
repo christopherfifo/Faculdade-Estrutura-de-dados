@@ -47,6 +47,53 @@ int listaCheia(Lista *li){
     return 0;
 }
 
+int listaVazia(Lista *li){
+    if(li == NULL){
+        abortaPrograma();
+    }
+    if(*li == NULL){
+        return 1;
+    }
+    return 0;
+}
+
+int insereInicio(Lista *li, ALUNO al){
+    if(li == NULL){
+        abortaPrograma();
+    }
+    ELEM *no = (ELEM*) malloc(sizeof(ELEM));
+    if(no == NULL){
+        return 0;
+    }
+    no->dados = al;
+    no->prox = (*li);
+    *li = no;
+
+    return al.matricula;
+}
+
+int insereFinal(Lista *li, ALUNO al){
+        if(li == NULL){
+        abortaPrograma();
+    }
+    ELEM *no = (ELEM*) malloc(sizeof(ELEM));
+    if(no == NULL){
+        return 0;
+    }
+    no->dados = al;
+    no->prox = NULL;
+    if((*li) == NULL){
+        *li = no;
+    }else{
+        ELEM *aux = *li;
+        while(aux->prox != NULL){
+            aux = aux->prox;
+        }
+        aux->prox = no;
+    }
+    return al.matricula;
+}
+
 void apagaLista(Lista *li){
     if(li != NULL){
         ELEM *no;

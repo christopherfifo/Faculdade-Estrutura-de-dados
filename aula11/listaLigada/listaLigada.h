@@ -14,3 +14,9 @@ void apagaLista(Lista *li);
 int tamanhoLista(Lista *li);
 
 int listaCheia(Lista *li);
+
+int listaVazia(Lista *li);
+
+int insereInicio(Lista *li, ALUNO al);
+
+int insereFinal(Lista *li, ALUNO al);
