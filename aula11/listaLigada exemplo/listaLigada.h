@@ -32,5 +32,3 @@ int removeOrdenado(Lista *li, int mat);
 int consultaPosicao(Lista *li, int posicao, ALUNO *al);
 
 int consultaMatricula(Lista *li, int mat, ALUNO *al);
-
-struct aluno coletadados();

@@ -234,19 +234,6 @@ int consultaMatricula(Lista *li, int mat, ALUNO *al){
     return 1;
 }
 
-struct aluno coletadados() {
-    struct aluno al1;
-    printf("\nDigite a matricula do aluno:");
-    scanf("%d", &al1.matricula);
-    printf("\nDigite a primeira nota do aluno:");
-    scanf("%f", &al1.n1);
-    printf("\nDigite a segunda nota do aluno:");
-    scanf("%f", &al1.n2);
-    printf("\nDigite a terceira nota do aluno:");
-    scanf("%f", &al1.n3);
-    return al1;
-}
-
 void apagaLista(Lista *li){
     if(li != NULL){
         ELEM *no;
