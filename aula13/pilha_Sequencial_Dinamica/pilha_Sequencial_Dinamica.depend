@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1732487850 source:d:\estutura_de_dados\aula 13\pilha_sequencial_dinamica\pilha.c
+	<stdio.h>
+	<stdlib.h>
+	"pilha.h"
+
+1732486950 d:\estutura_de_dados\aula 13\pilha_sequencial_dinamica\pilha.h
+
+1732488094 source:d:\estutura_de_dados\aula 13\pilha_sequencial_dinamica\main.c
+	<stdio.h>
+	<stdlib.h>
+	"pilha.h"
+
+1732488094 source:e:\estutura_de_dados\aula 13\pilha_sequencial_dinamica\main.c
+	<stdio.h>
+	<stdlib.h>
+	"pilha.h"
+
+1732486950 e:\estutura_de_dados\aula 13\pilha_sequencial_dinamica\pilha.h
+
+1732487850 source:e:\estutura_de_dados\aula 13\pilha_sequencial_dinamica\pilha.c
+	<stdio.h>
+	<stdlib.h>
+	"pilha.h"
+
