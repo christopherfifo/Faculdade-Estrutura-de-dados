@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Cristopher/Desktop/programação/Faculdade-Estrutura-de-dados/aula12/FilaDinamica",
-      "program": "c:/Users/Cristopher/Desktop/programação/Faculdade-Estrutura-de-dados/aula12/FilaDinamica/build/Debug/outDebug",
+      "cwd": "c:/Users/Cristopher/Desktop/programação/Faculdade-Estrutura-de-dados/aula13/pilha_Sequencial_Estatica",
+      "program": "c:/Users/Cristopher/Desktop/programação/Faculdade-Estrutura-de-dados/aula13/pilha_Sequencial_Estatica/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
