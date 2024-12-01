@@ -7,19 +7,25 @@
 int main()
 {
     Lista *li = NULL;
-    int x, identificador,escolha, quantidade;
+    int x, identificador, quantidade, escolha = 0 ;
     char nome[80];
 
     CLIENTE al_consulta, al;
-
 
     if((li = criaLista()) == NULL){
         abortaPrograma();
     }
 
-    FILE *arquivo = NULL;
-    
+    FILE *arquivo = NULL;  
     arquivo = abriArquivo(li);
+
+    printf("\n\n");
+    printf("##########################################################################################################################\n");
+    printf("Bem vindo ao sistema de gerenciamento de contatos\n\n");
+    printf("Desenvolvido por: \n");
+    printf("Christopher Willians - Gu3054047\n");
+    printf("Gabriel Vitor - \n");
+    printf("##########################################################################################################################\n");
 
 while(escolha != 7){
     printf("\nEscolha uma das opcoes:\n\n");
@@ -32,14 +38,14 @@ while(escolha != 7){
     printf("7 - Sair\n\n");
     printf("Digite a sua escolha: ");
     scanf("%d", &escolha);
-
-    printf("\n\n");
+    getchar();
 
     switch(escolha){
 
         case 1:
             printf("\nDigite a quantidade de contatos que deseja inserir: ");
             scanf(" %d", &quantidade);
+            getchar();
 
             for(int i = 0; i < quantidade; i++){
                 printf("\n");
@@ -62,6 +68,7 @@ while(escolha != 7){
 
             printf("Digite a identificador do aluno que deseja buscar: ");
             scanf("%d", &identificador);
+            getchar();
 
             x = consultaIdentificador(li, identificador, &al_consulta);
             if(x){
@@ -91,8 +98,9 @@ while(escolha != 7){
         break;
 
         case 6:
-             printf("\nDigite a identificador do aluno que deseja excluir: ");
+            printf("\nDigite a identificador do aluno que deseja excluir: ");
             scanf("%d", &identificador);
+            getchar();
 
             x = removeOrdenado(li, identificador);
             if(x){
@@ -115,10 +123,9 @@ while(escolha != 7){
 
 }
 
-    printf("\n\n");
-
     apagaLista(li);
-    system("pause");
+
     printf("\n\n\n");
+    system("pause");
     return 0;
 }

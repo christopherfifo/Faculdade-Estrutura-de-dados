@@ -18,8 +18,6 @@ void apagaLista(Lista *li);
 
 FILE* abriArquivo(Lista *li);
 
-void fechaArquivo(char nomeArquivo[]);
-
 int listaCheia(Lista *li);
 
 int listaVazia(Lista *li);
@@ -37,7 +35,5 @@ void consultaNome(Lista *li, char nome[]);
 char converteNome(char nome[]);
 
 void relatorio(CLIENTE *al);
-
-
 
 struct cliente coletadados(Lista *li);
