@@ -32,8 +32,14 @@ int confereDupllicidade(Lista *li, int id);
 
 void consultaNome(Lista *li, char nome[]);
 
-char converteNome(char nome[]);
+void converteNome(char nome[]);
 
 void relatorio(CLIENTE *al);
 
-struct cliente coletadados(Lista *li);
+struct cliente coletadados(Lista *li, int id);
+
+void listarTodos(Lista *li);
+
+void editarCliente(Lista *li, int id);
+
+void salvarArquivo(Lista *li);
