@@ -4,7 +4,7 @@
 
 int main()
 {
-    int x; //para os codigos de erro
+    int x; 
 
 
     ALUNO al_consulta, al1, al2, al3;

@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1733775080 source:c:\users\cristopher\desktop\programação\faculdade-estrutura-de-dados\aula14\listadupla\listadupla.c
+	<stdio.h>
+	<stdlib.h>
+	"listaDupla.h"
+
+1733775069 c:\users\cristopher\desktop\programação\faculdade-estrutura-de-dados\aula14\listadupla\listadupla.h
+
