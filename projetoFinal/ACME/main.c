@@ -58,16 +58,25 @@ int main()
                 if (x)
                 {
                     printf("\nAluno %d inserido ordenado com sucesso!", x);
+                    printf("\n\n");
+                    system("pause");
+                    system("cls");                    
                 }
                 else
                 {
                     printf("\nnao foi possivel inserir ordenado");
+                    printf("\n\n");
+                    system("pause");
+                    system("cls");       
                 }
             }
             break;
 
         case 2:
             listarTodos(li);
+            printf("\n\n");
+            system("pause");
+            system("cls");
             break;
 
         case 3:
@@ -82,10 +91,16 @@ int main()
             {
                 printf("\n\n");
                 relatorio(&al_consulta);
+                printf("\n\n");
+                system("pause");
+                system("cls"); 
             }
             else
             {
                 printf("\nidentificador %d nao existe.", 110);
+                printf("\n\n");
+                system("pause");
+                system("cls"); 
             }
             break;
 
@@ -102,6 +117,9 @@ int main()
 
             consultaNome(li, nome);
 
+            printf("\n\n");
+            system("pause");
+            system("cls"); 
             break;
 
         case 5:
@@ -110,6 +128,9 @@ int main()
             getchar();
 
             editarCliente(li, identificador);
+            printf("\n\n");
+            system("pause");
+            system("cls"); 
             break;
 
         case 6:
@@ -121,21 +142,31 @@ int main()
             if (x)
             {
                 printf("\nAluno %d removido ordenado com sucesso!", x);
+                printf("\n\n");
+                system("pause");
+                system("cls"); 
             }
             else
             {
                 printf("\nnao foi possivel remover ordenado");
+                printf("\n\n");
+                system("pause");
+                system("cls");
             }
             break;
 
         case 7:
             printf("\n\n");
             printf("Fim do programa");
+            printf("\n\n"); 
             break;
 
         default:
             printf("\n\n");
             printf("Opcao invalida");
+            printf("\n\n");
+            system("pause");
+            system("cls");
             break;
         }
     }
@@ -146,5 +177,6 @@ int main()
 
     printf("\n\n\n");
     system("pause");
+    system("cls");
     return 0;
 }

@@ -359,7 +359,7 @@ void consultaNome(Lista *li, char nome[])
         strcpy(nomePesquisa, no->dados.nome);
 
         converteNome(nomePesquisa);
-        if (strcmp(nomePesquisa, nome) == 0)
+        if (strstr(nomePesquisa, nome) != NULL)
         {
 
             tamanho++;
