@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Cristopher/Desktop/programação/Faculdade-Estrutura-de-dados/aula13/pilha_Sequencial_Estatica",
-      "program": "c:/Users/Cristopher/Desktop/programação/Faculdade-Estrutura-de-dados/aula13/pilha_Sequencial_Estatica/build/Debug/outDebug",
+      "cwd": "c:/Users/Cristopher/Desktop/programação/Faculdade-Estrutura-de-dados/projetoFinal/ACME",
+      "program": "c:/Users/Cristopher/Desktop/programação/Faculdade-Estrutura-de-dados/projetoFinal/ACME/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
