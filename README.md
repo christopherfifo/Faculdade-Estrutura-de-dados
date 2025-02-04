@@ -1,5 +1,4 @@
-tags:: #c #memoria
-[[Banco de dados (mysql)]] [[Banco de dados (mongoDB)]]
+
 
  - - - 
 # <span style="color:rgb(173, 73, 225)">aula 2 - programação modular</span>
